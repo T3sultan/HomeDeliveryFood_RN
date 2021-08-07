@@ -1,6 +1,6 @@
 export const colors={
 
-    buttons:"#F79208",
+    buttons:"#4B048D",
     grey1:"#34484d",
     grey2:"#5e6977",
     grey3:"#86939e",
@@ -8,8 +8,10 @@ export const colors={
     grey5:"#e1e8ee",
     CardComment:"#86939e",
     cardbackground:"white",
-    statusbar:"#F79208",
-    headerText:"white"
+    statusbar:"#4B048D",
+    headerText:"white",
+    yellow:"#F9A704",
+    black:"#0C0902"
 }
 
 export const parameters={

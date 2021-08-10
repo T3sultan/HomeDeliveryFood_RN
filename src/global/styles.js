@@ -56,6 +56,20 @@ export const parameters = {
  
 
 
+    },
+    createButtonStyle:{
+        backgroundColor:"white",
+        borderWidth:1,
+        borderColor:colors.statusbar,
+        borderRadius:10,
+        justifyConten:"center",
+        alignItems:"center"
+    },
+    buttonTitleStyle:{
+        color:colors.grey3,
+        fontWeight:"400",
+        fontSize:18
+
     }
 }
 

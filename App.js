@@ -3,6 +3,7 @@ import { StyleSheet, Text, View, StatusBar } from 'react-native'
 import Hearder from './src/components/Hearder';
 import { colors } from './src/global/styles'
 import SignInScreen from './src/screens/authScreens/SignInScreen';
+import SignInSwiperScreen from './src/screens/authScreens/SignInSwiperScreen';
 
 const App = () => {
   return (
@@ -12,7 +13,8 @@ const App = () => {
         backgroundColor={colors.statusbar}
 
       />
-      <SignInScreen />
+      {/* <SignInScreen /> */}
+      <SignInSwiperScreen/>
 
     </View>
   )

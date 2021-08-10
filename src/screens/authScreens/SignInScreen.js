@@ -1,9 +1,9 @@
 import React, { useState, useRef } from 'react'
 import { StyleSheet, Text, TextInput, View } from 'react-native'
 import Hearder from '../../components/Hearder';
-import { colors } from '../../global/styles';
+import { colors, parameters } from '../../global/styles';
 import * as Animatable from 'react-native-animatable';
-import { Icon } from 'react-native-elements';
+import { Icon, Button, SocialIcon } from 'react-native-elements';
 
 
 const SignInScreen = () => {
@@ -87,14 +87,62 @@ const SignInScreen = () => {
                 </View>
 
             </View>
+            <View style={{ marginHorizontal: 15, marginVertical: 30 }}>
+                <Button
+                    title='SIGN IN'
+                    buttonStyle={parameters.styleButton}
+                    titleStyle={parameters.buttonTitle}
+
+                />
+            </View>
+            <View style={{ alignItems: "center" }}>
+                <Text style={{ ...styles.paragraphText, textDecorationLine: "underline" }}>Forgot Password ?</Text>
+            </View>
+            <View style={{ alignItems: "center", marginTop: 30 }}>
+                <Text style={{ fontSize: 20, fontWeight: "bold" }}>OR</Text>
+            </View>
+            <View style={{ marginHorizontal: 10, marginTop: 20 }}>
+                <SocialIcon
+                    title="Sign In With Facebook"
+                    button
+                    type="facebook" s
+                    style={styles.SocialIcon}
+                    onPress={() => { }}
+                />
+            </View>
+
+            <View style={{ marginHorizontal: 10, marginTop: 0 }}>
+                <SocialIcon
+                    title="Sign In With Google"
+                    button
+                    type="google"
+                    style={styles.SocialIcon}
+                    onPress={() => { }}
+                />
+            </View>
+
+            <View style={{ flexDirection: 'row', marginTop: 40,alignItems:"center" }}>
+                <View style={{ marginHorizontal:30 }}>
+                    <Text style={{ color: colors.black, fontWeight: "bold", textDecorationLine: "underline", }}>Daily Special...</Text>
+                </View>
+                <View style={{ marginHorizontal: 70 }}>
+                    <Button
+                        title="Create an account"
+                        buttonStyle={parameters.createButton}
+                        titleStyle={parameters.createButtonTitle}
+                       
+                    />
+                </View>
 
 
+            </View>
 
         </View>
     )
 }
 
 export default SignInScreen;
+
 
 const styles = StyleSheet.create({
     container: {
@@ -138,5 +186,11 @@ const styles = StyleSheet.create({
 
 
     },
+    SocialIcon: {
+        borderRadius: 10,
+        height: 50,
+        backgroundColor:colors.statusbar
+
+    }
 
 })

@@ -14,6 +14,7 @@ export const colors = {
     black: "#0C0902",
     red:"#F91C06",
     white:"#FDFEFE",
+    deliveryButton:"#3498DB",
 
 }
 

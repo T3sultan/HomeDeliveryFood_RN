@@ -4,7 +4,7 @@ import { Icon, Button } from "react-native-elements";
 import { colors, parameters } from '../../global/styles';
 import Swiper from 'react-native-swiper';
 
-const SignInSwiperScreen = () => {
+const SignInSwiperScreen = ({ navigation }) => {
     return (
         <View style={styles.container}>
             <View style={styles.fullCoverStyle}>
@@ -66,6 +66,10 @@ const SignInSwiperScreen = () => {
                         title='SIGN IN'
                         buttonStyle={parameters.styleButton}
                         titleStyle={parameters.buttonTitle}
+                        onPress={() => {
+                            navigation.navigate("SignInScreen")
+
+                        }}
 
                     />
                 </View>
@@ -74,6 +78,10 @@ const SignInSwiperScreen = () => {
                         title='Create An Account'
                         buttonStyle={parameters.createButtonStyle}
                         titleStyle={parameters.buttonTitleStyle}
+                        onPress={()=>{
+                            navigation.navigate("SignInScreen")
+
+                        }}
 
                     />
                 </View>

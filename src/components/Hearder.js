@@ -3,7 +3,7 @@ import { StyleSheet, Text, View } from 'react-native';
 import { colors, parameters } from '../global/styles';
 import { Icon } from 'react-native-elements';
 
-const Hearder = ({ title, type }) => {
+const Hearder = ({ title, type,navigation}) => {
     return (
         <View style={styles.header}>
             <View style={{ marginLeft: 10 }}>
@@ -13,7 +13,9 @@ const Hearder = ({ title, type }) => {
                     name={type}
                     color={colors.headerText}
                     size={28}
-                    onPress={() => { }}
+                    onPress={() => {
+                        navigation.goBack()
+                     }}
                 />
 
             </View>

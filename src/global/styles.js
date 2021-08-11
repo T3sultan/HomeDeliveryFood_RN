@@ -52,22 +52,18 @@ export const parameters = {
         fontSize:16,
         fontWeight:"500",
        alignItems:"center",
-    
- 
-
-
     },
     createButtonStyle:{
         backgroundColor:"white",
         borderWidth:1,
-        borderColor:colors.statusbar,
+        borderColor:colors.grey3,
         borderRadius:10,
         justifyConten:"center",
         alignItems:"center"
     },
     buttonTitleStyle:{
-        color:colors.grey3,
-        fontWeight:"400",
+        color:colors.black,
+        fontWeight:"500",
         fontSize:18
 
     }

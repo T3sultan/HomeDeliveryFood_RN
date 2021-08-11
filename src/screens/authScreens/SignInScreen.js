@@ -6,7 +6,7 @@ import * as Animatable from 'react-native-animatable';
 import { Icon, Button, SocialIcon } from 'react-native-elements';
 
 
-const SignInScreen = () => {
+const SignInScreen = ({navigation}) => {
     const [textInputPassword, setTextInputPassword] = useState(false);
 
 
@@ -20,6 +20,8 @@ const SignInScreen = () => {
             <Hearder
                 title="MY ACCOUNT"
                 type="arrow-left"
+                navigation={navigation}
+               
             />
             <View style={{ alignItems: "center" }}>
                 <Text style={styles.signInText} >Sign-In</Text>

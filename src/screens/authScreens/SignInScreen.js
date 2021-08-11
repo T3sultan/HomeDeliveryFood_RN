@@ -94,6 +94,9 @@ const SignInScreen = ({navigation}) => {
                     title='SIGN IN'
                     buttonStyle={parameters.styleButton}
                     titleStyle={parameters.buttonTitle}
+                    onPress={()=>{
+                        navigation.navigate("HomeScreen")
+                    }}
 
                 />
             </View>
@@ -123,7 +126,7 @@ const SignInScreen = ({navigation}) => {
                 />
             </View>
 
-            <View style={{ flexDirection: 'row', marginTop: 40,alignItems:"center" }}>
+            <View style={{ flexDirection: 'row', marginTop: 80,alignItems:"center" }}>
                 <View style={{ marginHorizontal:30 }}>
                     <Text style={{ color: colors.black, fontWeight: "bold", textDecorationLine: "underline", }}>Daily Special...</Text>
                 </View>
@@ -148,7 +151,8 @@ export default SignInScreen;
 
 const styles = StyleSheet.create({
     container: {
-        flex: 1
+        flex: 1,
+        backgroundColor:colors.white
     },
     signInText: {
         color: colors.black,
